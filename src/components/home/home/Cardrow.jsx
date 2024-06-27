@@ -6,6 +6,9 @@ const data = [
     name: "Armchair",
     title : "Armchair with Head Rester",
     price : "£62.50",
+    pw : "£100.50",
+    offer : "Sale!"
+
 },
 {
     image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/sofa.jpg",
@@ -18,6 +21,8 @@ const data = [
     name: "Stool, Table",
     title : "Classic Wooden Table",
     price : " £85.00",
+    pw : "£125.00",
+    offer : "Sale!"
 },
 {
     image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2017/12/office-table.jpg",
@@ -30,12 +35,17 @@ const data = [
     name: "Study table, Table",
     title : "Corner Study Table with Chair",
     price : "£459.00",
+    pw : "£585.00",
+    offer : "Sale!"
 },
 {
     image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/study-table.jpg",
     name: "Armchair",
     title : "Desktop Table with Drawers",
     price : "£529.00",
+     pw : "£685.00",
+     offer : "Sale!"
+
 },
 {
     image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/dining-table.jpg",
@@ -48,6 +58,8 @@ const data = [
     name: "Sofa, Two Seaters",
     title : "Fancy Chairs",
     price : "£380.50",
+     pw : "£399.00",
+     offer : "Sale!"
 },
 {
     image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/round-sofa.jpg",
@@ -66,6 +78,8 @@ const data = [
     name: "Chair, Recliner",
     title : "Fancy Single Chair",
     price : "£419.00",
+     pw : "£485.00",
+     offer : "Sale!"
 },
 {
     image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/round-stool.jpg",
@@ -82,7 +96,7 @@ function Cardrow() {
   return (
     <div className='grid grid-cols-4 '>
         {data.map((value)=> {
-            return <Card image={value.image} name={value.name} title={value.title} price={value.price}/>
+            return <Card image={value.image} name={value.name} title={value.title} pw={value.pw} price={value.price} sale={value.offer}/>
         })}
     </div>
   )
