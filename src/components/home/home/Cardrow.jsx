@@ -7,7 +7,8 @@ const data = [
     title : "Armchair with Head Rester",
     price : "£62.50",
     pw : "£100.50",
-    offer : "Sale!"
+    offer : "Sale!",
+    color : true
 
 },
 {
@@ -22,7 +23,8 @@ const data = [
     title : "Classic Wooden Table",
     price : " £85.00",
     pw : "£125.00",
-    offer : "Sale!"
+    offer : "Sale!",
+    color : true
 },
 {
     image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2017/12/office-table.jpg",
@@ -36,7 +38,8 @@ const data = [
     title : "Corner Study Table with Chair",
     price : "£459.00",
     pw : "£585.00",
-    offer : "Sale!"
+    offer : "Sale!",
+    color : true
 },
 {
     image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/study-table.jpg",
@@ -44,7 +47,8 @@ const data = [
     title : "Desktop Table with Drawers",
     price : "£529.00",
      pw : "£685.00",
-     offer : "Sale!"
+     offer : "Sale!",
+     color : true
 
 },
 {
@@ -59,7 +63,8 @@ const data = [
     title : "Fancy Chairs",
     price : "£380.50",
      pw : "£399.00",
-     offer : "Sale!"
+     offer : "Sale!",
+     color : true
 },
 {
     image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/round-sofa.jpg",
@@ -79,7 +84,8 @@ const data = [
     title : "Fancy Single Chair",
     price : "£419.00",
      pw : "£485.00",
-     offer : "Sale!"
+     offer : "Sale!",
+     color : true
 },
 {
     image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/round-stool.jpg",
@@ -96,7 +102,7 @@ function Cardrow() {
   return (
     <div className='grid grid-cols-4 '>
         {data.map((value)=> {
-            return <Card image={value.image} name={value.name} title={value.title} pw={value.pw} price={value.price} sale={value.offer}/>
+            return <Card image={value.image} name={value.name} title={value.title} pw={value.pw} price={value.price} sale={value.offer} color={value.color}/>
         })}
     </div>
   )

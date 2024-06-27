@@ -6,7 +6,7 @@ function Card(props) {
         <div className='h-[290px] w-full pt-10'>
             <img className='h-full w-full rounded-sm relative' src={props.image} alt="" />
             <div className='absolute mt-[-230px] ml-[15px] '>
-                <span className=' rounded-full p-1 font-bold  text-[19px]'>{props.sale}</span>
+                <span className={`rounded-full p-1 font-bold  text-[16px] p-2 ${props.color ? "bg-white" : ""}`}>{props.sale}</span>
             </div>
         </div>
         <div className='p-3 text-gray-500 font-bold' >
