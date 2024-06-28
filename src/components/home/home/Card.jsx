@@ -2,10 +2,10 @@ import React from 'react'
 
 function Card(props) {
   return (
-    <div className='h-[400px] w-[330px] p-10 pl-16 '>
-        <div className='h-[290px] w-full pt-10'>
-            <img className='h-full w-full rounded-sm relative' src={props.image} alt="" />
-            <div className='absolute mt-[-230px] ml-[15px] '>
+    <div className='h-[400px] w-[300px] p-8'>
+        <div className='h-[290px] w-full overflow-hidden '>
+            <img className='h-full w-full rounded-sm relative object-cover duration-1000 hover:scale-110' src={props.image} alt="" />
+            <div className='absolute mt-[-260px] ml-[15px] '>
                 <span className={`rounded-full p-1 font-[600] text-[15px] text-gray-800 text-[16px] p-2 ${props.color ? "bg-white" : ""}`}>{props.sale}</span>
             </div>
         </div>
