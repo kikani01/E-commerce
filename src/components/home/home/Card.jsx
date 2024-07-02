@@ -6,7 +6,7 @@ function Card(props) {
         <div className='h-[290px] w-full overflow-hidden '>
             <img className='h-full w-full rounded-sm relative object-cover duration-1000 hover:scale-110' src={props.image} alt="" />
             <div className='absolute mt-[-260px] ml-[15px] '>
-                <span className={`rounded-full p-1 font-[600] text-[15px] text-gray-800 text-[16px] p-2 ${props.color ? "bg-white" : ""}`}>{props.sale}</span>
+                <span className={`rounded-full font-[600]  text-gray-800 text-[16px] p-2 ${props.color ? "bg-white" : ""}`}>{props.sale}</span>
             </div>
         </div>
         <div className='p-3 text-gray-500 font-bold' >

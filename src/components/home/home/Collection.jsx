@@ -3,7 +3,7 @@ import React from 'react'
 function Collection() {
   return (
     <div>
-        <div className='h-[500px] w-[92%] ml-[60px] mt-8 bg-gray-200 flex'>
+        <div className='h-[500px] w-[92%] ml-[60px] mt-8 bg-gray-200 flex '>
             <div>
             <h1 className='flex flex-col  p-20 text-gray-500 ml-[20px]'>
                 <span className='p-4 font-bold text-6xl'>Style</span>
