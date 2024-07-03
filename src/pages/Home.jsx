@@ -4,6 +4,8 @@ import Content from '../components/home/home/Content'
 import Cardrow from '../components/home/home/Cardrow'
 import Collection from '../components/home/home/Collection'
 import Contact from '../components/home/home/Contact'
+import Aboutus from '../components/home/home/Aboutus'
+import Footer from '../components/home/home/Footer'
 
 
 function Home() {
@@ -14,6 +16,8 @@ function Home() {
        <Content/>
        <Cardrow />
         <Contact/>
+        <Aboutus/>
+        <Footer/>
     </div>
   )
 }
