@@ -1,112 +1,24 @@
-import React from 'react'
-import Card from './Card'
+import React from "react";
+import Card from "./Card";
 
-const data = [
-{   image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/armchair.jpg",
-    name: "Armchair",
-    title : "Armchair with Head Rester",
-    price : "£62.50",
-    pw : "£100.50",
-    offer : "Sale!",
-    color : true
-
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/sofa.jpg",
-    name: "Sofa",
-    title : "Beige Living Room Sofa",
-    price : " £599.00",
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/table.jpg",
-    name: "Stool, Table",
-    title : "Classic Wooden Table",
-    price : " £85.00",
-    pw : "£125.00",
-    offer : "Sale!",
-    color : true
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2017/12/office-table.jpg",
-    name: "Computer table, Table",
-    title : "Computer Table with Office Chair",
-    price : "£62.50",
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/desk-table.jpg",
-    name: "Study table, Table",
-    title : "Corner Study Table with Chair",
-    price : "£459.00",
-    pw : "£585.00",
-    offer : "Sale!",
-    color : true
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/study-table.jpg",
-    name: "Armchair",
-    title : "Desktop Table with Drawers",
-    price : "£529.00",
-     pw : "£685.00",
-     offer : "Sale!",
-     color : true
-
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/dining-table.jpg",
-    name: "Armchair",
-    title : "Dinning Table for Two",
-    price : "£360.00",
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/fancy-chairs-600x600.jpg",
-    name: "Sofa, Two Seaters",
-    title : "Fancy Chairs",
-    price : "£380.50",
-     pw : "£399.00",
-     offer : "Sale!",
-     color : true
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/round-sofa.jpg",
-    name: "Sofa, Two Seaters",
-    title : "Modern White Round Sofa",
-    price : "£599.00",
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2017/11/chair.jpg",
-    name: "Chair, Stool",
-    title : "Fancy Single Chair",
-    price : "£199.00",
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/pic53-free-img.jpg",
-    name: "Chair, Recliner",
-    title : "Fancy Single Chair",
-    price : "£419.00",
-     pw : "£485.00",
-     offer : "Sale!",
-     color : true
-},
-{
-    image : "https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2018/01/round-stool.jpg",
-    name: "Chair, Stool",
-    title : "Round Short Leg Stool/Chair",
-    price : "£229.00",
-},
-
-
-]
-
-
-
-function Cardrow() {
+function CardRow(props) {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 mt-[-50px] pl-5 overflow-hidden gap-6 md:grid-cols-3 lg:grid-cols-4 p-2'>
-        {data.map((value)=> {
-            return <Card image={value.image} name={value.name} title={value.title} pw={value.pw} price={value.price} sale={value.offer} color={value.color}/>
-        })}
+    <div className="grid grid-cols-1 sm:grid-cols-2 mt-[-50px] pl-5 overflow-hidden gap-6 md:grid-cols-3 lg:grid-cols-4 p-2">
+      {props.data.map((value) => {
+        return (
+          <Card
+            image={value.image}
+            name={value.name}
+            title={value.title}
+            pw={value.pw}
+            price={value.price}
+            sale={value.offer}
+            color={value.color}
+          />
+        );
+      })}
     </div>
-  )
+  );
 }
 
-export default Cardrow
+export default CardRow;
