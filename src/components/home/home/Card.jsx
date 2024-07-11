@@ -10,7 +10,7 @@ function Card(props) {
             </div>
         </div>
         <div className='p-3 text-gray-500 font-bold' >
-            <p className='text-[16px] font-medium'>{props.name}</p>
+            <p className='text-[16px] font-medium'>{props.category}</p>
             <h1 className='pt-1'>{props.title}</h1>
             <div className='flex'>
            <span className='line-through font-light text-gray-600'>{props.pw}</span>&nbsp;&nbsp;

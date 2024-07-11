@@ -8,7 +8,7 @@ function CardRow(props) {
         return (
           <Card
             image={value.image}
-            name={value.name}
+            category={value.category}
             title={value.title}
             pw={value.pw}
             price={value.price}
